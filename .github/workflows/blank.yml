@@ -24,7 +24,7 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
-      run: echo %test%
+      run: echo %VERSION_NUMBER%
       shell: cmd
       env:
         VERSION_NUMBER: ${{env.MAJOR_NUMBER}}.${{env.MINOR_NUMBER}}

@@ -24,10 +24,10 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
-      run: echo %test%
+      run: echo %test% %MAJOR_NUMBER%
       shell: cmd
       env:
-        test: ${{env:MAJOR_NUMBER}}
+        test: $MAJOR_NUMBER
 
     # Runs a set of commands using the runners shell
     - name: Run a multi-line script
